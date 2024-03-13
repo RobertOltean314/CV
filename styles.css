@@ -1,42 +1,44 @@
 .left-side{
     background-color: #2c446f;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .right-side{
     background-color: #799ACC;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.right-side-panel{
-    background-color: rgb(113, 113, 204);
-    position: relative;
-    width: 75%;
-    height: 90%;
-    left:5%;
-    
+.card {
+    background-color: #c4dbff !important; 
 }
 
 .about-me {
-    max-width: 60%;
-    margin-left: 10%;
-    margin-top: 10%;
+    max-width: 70%;
+    margin: 5%;
 }
 
 .work-experience {
     position: relative;
-    margin-top: 15%;
-    margin-left: 5%;
+    max-width: 90%;
+    margin: 5%;
+    padding:2%;
+}
+
+.projects{
+    position: relative;
+    margin: 5%;
+    max-width: 70%; 
 }
 
 .education {
     position: relative;
-    margin-top: 15%;
-    margin-left: 5%;
+    margin: 5%;
+    max-width: 70%;
+
 }
 
 .skills-list{
-    margin-top: 5%  ;
+    margin: 5%;
     overflow: hidden;
 }
 

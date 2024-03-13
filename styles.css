@@ -1,0 +1,40 @@
+.left-side{
+    background-color: rgb(202, 202, 202);
+    height: 100vh;
+    position: aboslute;
+}
+
+.right-side{
+    background-color: rgb(131, 131, 213);
+    height: 100vh;
+    position: aboslute;
+}
+
+.right-side-panel{
+    background-color: rgb(113, 113, 204);
+    position: relative;
+    width: 75%;
+    height: 90%;
+    left:5%;
+    
+}
+
+.about-me {
+    width: 50%;
+    position: relative;
+    left: 15%;
+    top: 10%;
+}
+
+.work-experience {
+    position: relative;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.education {
+     width: 50%;
+     margin-top: 3%;
+     margin-left: 20%;
+}

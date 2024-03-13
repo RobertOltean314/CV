@@ -1,13 +1,11 @@
 .left-side{
-    background-color: rgb(202, 202, 202);
+    background-color: #2c446f;
     height: 100vh;
-    position: aboslute;
 }
 
 .right-side{
-    background-color: rgb(131, 131, 213);
+    background-color: #799ACC;
     height: 100vh;
-    position: aboslute;
 }
 
 .right-side-panel{
@@ -20,21 +18,53 @@
 }
 
 .about-me {
-    width: 50%;
-    position: relative;
-    left: 15%;
-    top: 10%;
+    max-width: 60%;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
 .work-experience {
     position: relative;
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 20%;
+    margin-top: 15%;
+    margin-left: 5%;
 }
 
 .education {
-     width: 50%;
-     margin-top: 3%;
-     margin-left: 20%;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.skills-list{
+    margin-top: 5%  ;
+    overflow: hidden;
+}
+
+.skills-list img {
+    height: 12.5rem;
+    width: 12.5rem;
+    object-fit: cover;
+}
+
+.wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15rem;
+
+    justify-items: stretch;
+}
+
+@keyframes scroll{
+    to{
+        translate: calc(-9 *15rem);
+    }
+}
+
+.wrapper{
+    animation: scroll 30s linear infinite;
+}
+
+.skills-font{
+    color: white;
+    font-family: "Monaco", monospace;
 }

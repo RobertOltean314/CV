@@ -1,43 +1,10 @@
-.left-side{
-    background-color: #2c446f;
-    min-height: 100vh;
+.about-me-image {
+    border-radius: 10%;
+    height: 50%;
+    width: auto;
 }
 
-.right-side{
-    background-color: #799ACC;
-    min-height: 100vh;
-}
-
-.card {
-    background-color: #c4dbff !important; 
-}
-
-.about-me {
-    max-width: 70%;
-    margin: 5%;
-}
-
-.work-experience {
-    position: relative;
-    max-width: 90%;
-    margin: 5%;
-    padding:2%;
-}
-
-.projects{
-    position: relative;
-    margin: 5%;
-    max-width: 70%; 
-}
-
-.education {
-    position: relative;
-    margin: 5%;
-    max-width: 70%;
-
-}
-
-.skills-list{
+.skills-list {
     margin: 5%;
     overflow: hidden;
 }
@@ -48,7 +15,7 @@
     object-fit: cover;
 }
 
-.wrapper{
+.wrapper {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 15rem;
@@ -56,17 +23,17 @@
     justify-items: stretch;
 }
 
-@keyframes scroll{
-    to{
+@keyframes scroll {
+    to {
         translate: calc(-9 *15rem);
     }
 }
 
-.wrapper{
+.wrapper {
     animation: scroll 30s linear infinite;
 }
 
-.skills-font{
+.skills-font {
     color: white;
     font-family: "Monaco", monospace;
 }

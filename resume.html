@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Oltean Robert" />
+    <meta name="keywords" content="CV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Robert Oltean</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
@@ -11,9 +15,10 @@
     />
   </head>
   <body>
+    <!--Navbar-->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container-fluid justify-content-center">
           <a class="navbar-brand" href="#">Oltean Robert</a>
           <button
             class="navbar-toggler"
@@ -26,13 +31,13 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-me">About me</a>
+                <a class="nav-link" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portofolio">Portofolio</a>
@@ -44,10 +49,10 @@
                 <a class="nav-link" href="#education">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">My Skills</a>
+                <a class="nav-link" href="#footer">My Skills</a>
               </li>
             </ul>
           </div>
@@ -55,7 +60,8 @@
       </nav>
     </header>
 
-    <section id="home">
+    <!--About Me Section-->
+    <section id="about-me">
       <div class="bg-dark text-secondary px-4 py-5 text-center">
         <div class="row featurette d-flex align-items-center">
           <div class="col-md-7">
@@ -78,48 +84,71 @@
       </div>
     </section>
 
-    <!--About me Section-->
-    <section id="about-me">
-      <div class="bg-light text-secondary px-4 py-5 text-text-start">
-        <div class="row"></div>
-      </div>
-    </section>
-
     <!--Portofolio Section-->
     <section id="portofolio">
-      <div class="bg-dark text-secondary px-4 py-5 text-end">
-        <div class="row">
-          <h5 class="card-title"><u>Personal Projects</u></h5>
-          <h6>1.Personal Budget Tool</h6>
-          <ul>
-            A WEB APP made using: python, Django frameworkn HTML, CSS and
-            JavaScript. In this app Users can manage their budgets and track
-            their incomes and expenses.
-            <br />
-            <a
-              href="https://github.com/RobertOltean314/PersonalBudget"
-              class="btn btn-success"
-              >View Project</a
-            >
-          </ul>
-          <h6>2.Contact Manager</h6>
-          <ul>
-            An Windows app using Java and Java Swing. This project has a very
-            basic interface and it was made for a project at University
-            <br />
-            <a
-              href="https://github.com/RobertOltean314/OOP-Project"
-              class="btn btn-success"
-              >View Project</a
-            >
-          </ul>
+      <div class="container-fluid bg-light px-4 py-5 text-center">
+        <div class="row justify-content-center">
+          <!--First Project-->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Personal Budget</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://github.com/RobertOltean314/PersonalBudget"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >GitHub Repository</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--Second Project-->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Stock Market App</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://github.com/RobertOltean314/StockMarket"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >GitHub Repository</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--Third Project-->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Contact Manager</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://github.com/RobertOltean314/OOP-Project"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >GitHub Repository</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!--Work Experience Section-->
     <section id="work-experience">
-      <div class="bg-light text-secondary px-4 py-5">
+      <div class="bg-dark text-secondary px-4 py-5">
         <h1 class="text-center mb-5"><u>Work Experience</u></h1>
         <div class="row">
           <div class="col-md-6">
@@ -213,19 +242,51 @@
 
     <!--Education Section-->
     <section id="education">
-      <div class="bg-dark text-secondary px-4 py-5 text-end">
+      <div class="bg-light text-secondary px-4 py-5 text-center">
         <div class="row">
-          <h5 class="card-title"><u>Education</u></h5>
-          <h6>University of "Lucian Blaga" Sibiu 2022-2026</h6>
-          <h6>Software Developer Academy 2023-2024</h6>
-          <h6>National Collage of "Lucian Blaga" Sebes 2014-2022</h6>
+          <h5 class="card-title" style="font-size: 46px; margin-bottom: 20px">
+            <u>Education</u>
+          </h5>
+          <!--University-->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">University of "Lucian Blaga" Sibiu</h5>
+                <p class="card-text">2022-2026</p>
+                <a href="#" class="btn btn-primary" target="_blank">Website</a>
+              </div>
+            </div>
+          </div>
+          <!--Second Project-->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Software Developer Academy</h5>
+                <p class="card-text">2023-2024</p>
+                <a href="#" class="btn btn-primary" target="_blank">Website</a>
+              </div>
+            </div>
+          </div>
+          <!--Third Project-->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  National Collage of "Lucian Blaga" Sebes
+                </h5>
+                <p class="card-text">2014-2022</p>
+                <a href="#" class="btn btn-primary" target="_blank">Website</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!--Contact  Section-->
-    <section id="contact">
-      <div class="bg-light text-secondary px-4 py-5 text-start">
+    <!--Skills Section-->
+
+    <footer id="footer">
+      <div class="bg-dark text-white text-center p-3">
         <div class="row">
           <p>Email: olteanrobertadrian314@gmail.com</p>
           <p>
@@ -239,13 +300,6 @@
             >
           </p>
         </div>
-      </div>
-    </section>
-
-    <!--Skills Section-->
-
-    <section id="skills">
-      <div class="bg-dark text-white text-center p-3">
         <div class="skills-list">
           <h1 class="skills-font">My skills</h1>
           <div class="wrapper mt-5">
@@ -271,7 +325,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

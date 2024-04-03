@@ -1,3 +1,54 @@
+body {
+    margin: 0;
+    font-family: "Monaco", monospace;
+}
+
+.header {
+    background-color: white;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__wrapper {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+    flex-shrink: 0;
+}
+
+/*elementele din navbar*/
+.nav__link {
+    font-family: "Lucida Console", monospace; 
+    padding: 20px 24px;
+    color: #3f3f3f;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.1s, font-size 0.1s;
+}
+
+.nav__link:hover {
+    color: #05beff;
+    font-size: 24px;
+}
+
+
+
+
+
+
 .about-me-image {
     border-radius: 10%;
     width: 40vw;
@@ -36,4 +87,11 @@
 .skills-font {
     color: white;
     font-family: "Monaco", monospace;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
